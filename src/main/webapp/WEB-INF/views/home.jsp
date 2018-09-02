@@ -13,6 +13,8 @@
 	<h1>Hello world!</h1>
 
 	<P>The time on the server is ${serverTime}.</P>
-	<a href="<c:url value='/Reservation/template.rv' />">Go to Template.jsp!!~</a>
+	<a href="<c:url value='/Reservation/template.rv' />">Go to Template.jsp!!~</a><br />
+	<a href="<c:url value='/Reservation/Top4.rv' />">top4</a>
+	<a href="<c:url value='/Reservation/Top3.rv' />">top3</a>
 </body>
 </html>

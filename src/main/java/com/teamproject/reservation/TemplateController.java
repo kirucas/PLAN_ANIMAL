@@ -13,4 +13,14 @@ public class TemplateController {
 		
 	}
 	
+	@RequestMapping("/Reservation/Top4.rv")
+	public String top4() {
+		return "forward:/WEB-INF/template/Top_ver4.jsp";
+	}
+	
+	@RequestMapping("/Reservation/Top3.rv")
+	public String top3() {
+		return "forward:/WEB-INF/template/Top_ver3.jsp";
+	}
+	
 }

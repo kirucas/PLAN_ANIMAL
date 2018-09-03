@@ -10,7 +10,7 @@
 <body>
    	<fieldset>
    		<legend>test</legend>
-   	
+   		<a href="<c:url value='/WEB-INF/views/TeamNews.jsp' />">aaaaa</a>   	
    	</fieldset>
 </body>
 </html>

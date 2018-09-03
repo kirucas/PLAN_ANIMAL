@@ -30,7 +30,10 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a href="#" class="navbar-brand">LOGO Image</a>
+			<a href="#" class="navbar-brand">
+				<img src="<c:url value='/resources/Images/logo.png' />" />
+				LOGO Image
+			</a>
 		</div>
 		
 		<div class="collapse navbar-collapse" id="TopMenu">
@@ -73,7 +76,7 @@
 		</div>
 	</nav>
 	
-	<div style="background-color: aqua; height: 2000px;">
+	<div style="background-color: aqua; height: 200px;">
 	</div>
 	
 </body>

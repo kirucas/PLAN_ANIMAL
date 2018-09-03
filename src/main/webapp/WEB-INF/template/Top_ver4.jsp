@@ -26,6 +26,7 @@
 	<nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-lg">
 	
 		<a href="#" class="navbar-brand">
+			<img src="<c:url value='/resources/Images/logo.png' />" />
 			LOGO Image
 		</a>
 

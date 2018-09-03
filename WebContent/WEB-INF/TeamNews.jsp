@@ -52,7 +52,7 @@
 						<a href="https://www.youtube.com/watch?v=LUmZorJvDBA">
 						<img
 							src="<c:url value='/Images/owl.jpg' />" alt="슬라이드1!"
-							style="width: 50%; height: 400px"
+							style="width: 100%; height: 100%"
 							class="img-responsive center-block">
 						</a>
 
@@ -68,7 +68,7 @@
 						<a
 							href="https://www.youtube.com/channel/UCmLiSrat4HW2k07ahKEJo4w/videos">
 							<img src="<c:url value='/Images/darkcat.jpg' />" alt="슬라이드2"
-							style="width: 50%; height: 400px"
+							style="width: 100%; height: 100%"
 							class="img-responsive center-block">
 						</a>
 						<div class="carousel-caption">
@@ -84,7 +84,7 @@
 						<a
 							href="https://www.sciencetimes.co.kr/?news=%EB%8A%91%EB%8C%80%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EA%B0%9C%EA%B0%80-%EB%90%98%EC%97%88%EB%82%98">
 							<img src="<c:url value='/Images/wolf.jpg' />" alt="슬라이드3"
-							style="width: 50%; height: 400px"
+							style="width: 100%; height: 100%"
 							class="img-responsive center-block">
 						</a>
 						<div class="carousel-caption">

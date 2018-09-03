@@ -8,9 +8,11 @@
 <title>Insert title here</title>
 </head>
 <body>
+	
+	<jsp:include page="/WEB-INF/template/Top.jsp" />
+
    	<fieldset>
    		<legend>test</legend>
-   	
    	</fieldset>
 </body>
 </html>

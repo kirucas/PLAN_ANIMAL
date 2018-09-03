@@ -5,7 +5,7 @@
 	<script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<style tyle="text/css">
+<style style="text/css">
 * {
 box-sizing: border-box;
 -webkit-box-sizing: border-box;
@@ -38,7 +38,9 @@ bottom: 0;
 left: 0;
 right: 0;
 color: white;
-background-color: #333333;
+}
+.mdl-mega-footer{
+	background-color : #ffbdbd;
 }
 </style>
 </head>

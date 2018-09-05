@@ -11,7 +11,7 @@
     <title>부트스트랩  템플릿</title>
 	
     <!-- 부트스트랩 -->
-    <link href="<c:url value='/Bootstrap/css/bootstrap.min.css'/>" rel="stylesheet">
+    <link href="<c:url value='/resources/Bootstrap/css/bootstrap.min.css'/>" rel="stylesheet">
 
     <!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
     <!-- WARNING: Respond.js 는 당신이 file:// 을 통해 페이지를 볼 때는 동작하지 않습니다. -->
@@ -22,7 +22,7 @@
     <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
-    <script src="<c:url value='/Bootstrap/js/bootstrap.min.js'/>"></script>
+    <script src="<c:url value='/resources/Bootstrap/js/bootstrap.min.js'/>"></script>
    
     <script>
 	$(function() {
@@ -51,7 +51,7 @@
 
 						<a href="https://www.youtube.com/watch?v=LUmZorJvDBA">
 						<img
-							src="<c:url value='/Images/owl.jpg' />" alt="슬라이드1!"
+							src="<c:url value='/resources/Images/owl.jpg' />" alt="슬라이드1!"
 							style="width: 50%; height: 400px"
 							class="img-responsive center-block">
 						</a>
@@ -67,7 +67,7 @@
 					<div class="item center-block">
 						<a
 							href="https://www.youtube.com/channel/UCmLiSrat4HW2k07ahKEJo4w/videos">
-							<img src="<c:url value='/Images/darkcat.jpg' />" alt="슬라이드2"
+							<img src="<c:url value='/resources/Images/darkcat.jpg' />" alt="슬라이드2"
 							style="width: 50%; height: 400px"
 							class="img-responsive center-block">
 						</a>
@@ -83,7 +83,7 @@
 					<div class="item center-block">
 						<a
 							href="https://www.sciencetimes.co.kr/?news=%EB%8A%91%EB%8C%80%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EA%B0%9C%EA%B0%80-%EB%90%98%EC%97%88%EB%82%98">
-							<img src="<c:url value='/Images/wolf.jpg' />" alt="슬라이드3"
+							<img src="<c:url value='/resources/Images/wolf.jpg' />" alt="슬라이드3"
 							style="width: 50%; height: 400px"
 							class="img-responsive center-block">
 						</a>

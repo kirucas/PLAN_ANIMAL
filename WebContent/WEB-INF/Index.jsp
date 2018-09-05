@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8" />
-<title>Insert title here</title>
+<title>Index</title>
 </head>
 <body>
 	
@@ -13,6 +13,7 @@
 
    	<fieldset>
    		<legend>test</legend>
+   		<a href="<c:url value='/Animal/teamnews.aw' />">뉴스</a>
    	</fieldset>
 </body>
 </html>

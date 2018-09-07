@@ -11,8 +11,9 @@ public class Templatecontroller {
 		
 		System.out.println("here a come");
 		
-		return "/WEB-INF/views/TeamNews.jsp";
+		return "TeamNews";
 		
 	}
 	
 }
+	

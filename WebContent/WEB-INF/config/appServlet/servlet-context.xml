@@ -7,10 +7,42 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
 		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd">
 
+	<!--
+		DI 관련 Annotation을 공통으로 적용하기 위한 태그
+	-->
 	<mvc:annotation-driven />
 	
+	<!--
+		Resource 경로 등록
+	-->
 	<mvc:resources location="/Resources/" mapping="/resources/**" />
 	
 	<context:component-scan base-package="com.teamproject.animal" />
+
+	<!--
+		접두어 및 접미어 미사용 설정을 위한 default ViewResolver를 bean으로 등록
+	-->
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="order" value="2"></property>
+		<!-- 접두어 -->
+		<property name="prefix" value="/WEB-INF/views/"></property>
+		<!-- 접미어 -->
+		<property name="suffix" value=".jsp"></property>
+	</bean>
+	
+	<!-- tiles 사용을 위한 bean 등록 -->
+	<!-- <bean class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
+		<property name="definitions">
+			<list>
+				<value>/WEB-INF/template/layout.xml</value>
+			</list>
+		</property>
+	</bean>
+	
+	tiles를 처리하도록 또 다른 view resolver 등록
+	<bean class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+		<property name="order" value="1" />
+		<property name="viewClass" value="org.springframework.web.servlet.view.tiles3.TilesView" />
+	</bean> -->
 
 </beans>

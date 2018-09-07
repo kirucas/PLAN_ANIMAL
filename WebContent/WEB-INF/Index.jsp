@@ -8,9 +8,15 @@
 <title>Insert title here</title>
 </head>
 <body>
-   	<fieldset>
+
+<jsp:include page="/WEB-INF/views/TeamNews.jsp"/>
+   	
+   	<!-- <fieldset>
    		<legend>test</legend>
-   		<a href="<c:url value='/WEB-INF/views/TeamNews.jsp' />">aaaaa</a>   	
-   	</fieldset>
+   		
+  
+   		
+   		<a href='/WEB-INF/views/TeamNews.jsp' />aaaaa</a>   	
+   	</fieldset> -->
 </body>
 </html>

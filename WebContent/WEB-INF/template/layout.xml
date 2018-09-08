@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+  <definition name="AniWhere" template="/WEB-INF/template/layout.jsp">
+    <put-attribute name="Top" value="/WEB-INF/template/Top_ver4.jsp" />
+    <put-attribute name="Body" value="" />
+    <put-attribute name="Footer" value="/WEB-INF/template/Footer.jsp" />
+  </definition>
+  
+  <definition name="*.tiles" extends="AniWhere">
+  	<put-attribute name="Body" value="/WEB-INF/views/{1}.jsp" />
+  </definition>
+
+  <definition name="*/*.tiles" extends="AniWhere">
+  	<put-attribute name="Body" value="/WEB-INF/views/{1}/{2}.jsp" />
+  </definition>
+
+  <definition name="*/*/*.tiles" extends="AniWhere">
+  	<put-attribute name="Body" value="/WEB-INF/views/{1}/{2}/{3}.jsp" />
+  </definition>
+
+  <definition name="*/*/*/*.tiles" extends="AniWhere">
+  	<put-attribute name="Body" value="/WEB-INF/views/{1}/{2}/{3}/{4}.jsp" />
+  </definition>
+  
+</tiles-definitions>

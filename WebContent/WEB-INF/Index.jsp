@@ -9,10 +9,10 @@
 </head>
 <body>
 
-<jsp:include page="/WEB-INF/views/TeamNews.jsp"/>
+<jsp:include page="/WEB-INF/boot4/TeamNews.jsp"/>
    	
    	
-   	<jsp:include page="/WEB-INF/views/withbuy.jsp"/>
+   	<jsp:include page="/WEB-INF/boot4/withbuy.jsp"/>
    	<!-- <fieldset>
    		<legend>test</legend>
    		

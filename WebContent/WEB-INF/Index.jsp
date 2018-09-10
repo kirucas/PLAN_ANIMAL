@@ -11,6 +11,8 @@
 
 <jsp:include page="/WEB-INF/views/TeamNews.jsp"/>
    	
+   	
+   	<jsp:include page="/WEB-INF/views/withbuy.jsp"/>
    	<!-- <fieldset>
    		<legend>test</legend>
    		

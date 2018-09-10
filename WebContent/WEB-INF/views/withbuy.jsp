@@ -8,7 +8,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
-<title>부트스트랩 템플릿</title>
+<title>withbuy.jsp</title>
 
 <!-- 부트스트랩 -->
 <link href="<c:url value='/Bootstrap/css/bootstrap.min.css'/>"
@@ -37,16 +37,15 @@
 <style type="text/css">
 
  
-
-
-
 </style>
 
 
 </head>
 <body>
 
-	<div class="container ">
+			
+
+	<div class="container " style="margin-top: 200px">
 		<div id="buy" class="carousel slide" data-ride="carousel">
 
 			<!-- Wrapper for slides -->
@@ -60,11 +59,11 @@
 				<div class="carousel-inner ">
 					<div class="item active">
 
-						<a href="https://www.youtube.com/watch?v=LUmZorJvDBA"> <img
+						 <img
 							src="<c:url value='/Images/dog.jpg' />" alt="슬라이드1!"
 							style="width: 1160px; height: 600px"
 							class="img-responsive center-block">
-						</a>
+						
 
 						<div class="carousel-caption">
 							<h2 style="text-align: left">이용하시는건 처음이신가요?</h2>
@@ -74,12 +73,15 @@
 							</h3>
 						</div>
 					</div>
+					
+				
+					
 					<div class="item">
-						<a href="https://www.youtube.com/channel/UCmLiSrat4HW2k07ahKEJo4w/videos">
+						
 							<img src="<c:url value='/Images/cutecat.jpg' />" alt="슬라이드2"
 							style="width: 1160px; height: 600px"
 							class="img-responsive center-block">
-						</a>
+						
 						<div class="carousel-caption">
 							<h2 style="text-align: left">고양이에게 필수!!</h2>
 							<h3 style="text-align: left">
@@ -91,13 +93,11 @@
 
 					</div>
 					<div class="item">
-						
-						<a
-							href="https://www.sciencetimes.co.kr/?news=%EB%8A%91%EB%8C%80%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EA%B0%9C%EA%B0%80-%EB%90%98%EC%97%88%EB%82%98">
+					
 							<img src="<c:url value='/Images/babydog.jpg' />" alt="슬라이드3"
 							style="width: 1160px; height: 600px"
 							class="img-responsive center-block">
-						</a>
+						
 						<div class="carousel-caption">
 							<h2 style="color: white;text-align: left">아이들에게 필요한건 무엇일까요?</h2>
 							<h3 style="text-align: left">
@@ -109,24 +109,66 @@
 					
 
 				</div>
+					<a class="left carousel-control" href="#buy" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+		</a> <a class="right carousel-control" href="#buy" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+		</a>
 			</div>
 			
-    <a class="left carousel-control" href="#buy" data-slide="prev">
-		<span class="glyphicon glyphicon-chevron-left"></span>
-	</a>
-	
-	<a class="right carousel-control" href="#buy" data-slide="next">
-		<span class="glyphicon glyphicon-chevron-right"></span>
-	</a>
+			</div>
+			
+			<div class="col-xs-12 col-sm-12 col-md-12 text-center"
+			style="margin-top: 200px">
+			
+ 
+
+			
+
+			<div class="col-sm-4" style="border: 1px solid gray;height:400px ">
+			<div style="margin-top: 15px"></div>
+				<img src="<c:url value='/Images/lazydog.jpg'  />" alt="Sass and Less support"
+					class="img-responsive center-block ">
+				<h3>운동부족이 애완동물에게 미치는 영향</h3>
+				<p>여러분이 평소에 산책을 같이 하거나 
+				 함꼐 시간을 보내지 않는다면 애완동물에게는 
+				 무척 안좋은 영향을 끼칩니다
+				
+				</p>
+
+
+			</div>
+
+
+
+			<div class="col-sm-4" style="border: 1px solid gray;height:400px">
+			<div style="margin-top: 15px"></div>
+				<img src="<c:url value='/Images/wakecat.jpg' />" alt="Responsive across devices"
+					class="img-responsive center-block ">
+				<h3>고양이가 기분좋을떄는 무엇을 할까요</h3>
+				<p>고양이에게는 기분이 좋을떄 하는 행동이 있습니다
+				당신이 초보집사라면 반드시 읽어야 할 팁!!</p>
+			</div>
+
+
+			<div class="col-sm-4 center-block" style="border: 1px solid gray;height:400px ">
+			<div style="margin-top: 15px"></div>
+				<img src="<c:url value='/Images/accidentdog.jpg' />" alt="Components"
+					class="img-responsive center-block">
+				<h3>
+					우리집 말썽꾸러기를 소개해요
+					<!--Full of features-->
+				</h3>
+				<p>집에 돌아왔더니 바닥에 휴지머 신발이며 침에 흥건하게 젖어 있는데다가 
+				새침하게 누워 있는 말썽꾸러기를 봤을떄 어떻게 혼내야 할까요?
+					</p>
+			</div>
 		</div>
-	</div>
-	
-	<div class="col-">
-	
-	
+
 	</div>
 
-	
+
+
 
 
 

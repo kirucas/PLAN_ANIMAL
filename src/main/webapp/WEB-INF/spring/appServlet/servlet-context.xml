@@ -13,16 +13,34 @@
 	<annotation-driven />
 
 	<!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources directory -->
-	<resources mapping="/resources/**" location="/resources/" />
+	<!-- <resources mapping="/resources/**" location="/resources/" /> -->
+	<!-- webapp 하위의 모든 폴더에서 resources를 찾기위한 태그 등록 -->
+	<default-servlet-handler/>
 
 	<!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->
 	<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<beans:property name="order" value="2"></beans:property>
 		<beans:property name="prefix" value="/WEB-INF/views/" />
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
 	<context:component-scan base-package="com.teamproject.reservation" />
 	
+	<!-- tiles 사용을 위한 bean 등록 -->
+	<beans:bean class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
+		<beans:property name="definitions">
+			<beans:list>
+				<beans:value>/WEB-INF/template/layout.xml</beans:value>
+			</beans:list>
+		</beans:property>
+	</beans:bean>
 	
+	<beans:bean class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+		<beans:property name="order" value="1" />
+		<beans:property name="viewClass" value="org.springframework.web.servlet.view.tiles3.TilesView" />
+	</beans:bean>
+	
+	<!-- 차후에 .properties 파일(resource파일)을 사용 할 경우 아래의 주석을 해제한 후 location을 설정하여 사용 -->
+	<!-- <context:property-placeholder location="classpath:"/> -->
 	
 </beans:beans>

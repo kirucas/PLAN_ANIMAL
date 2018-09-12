@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+	<!-- Java Bean 별칭 : mapper파일에서 환경 설정 파일로 설정 위치가 변경 됨 -->
+	<!-- <typeAliases>
+		<typeAlias type="com.teamproject.reservation.reservationDTO" alias="reservationDTO" />
+	</typeAliases>
+
+	<mappers>
+		<mapper resource="mybatis/reservation.xml" />
+	</mappers> -->
+	
+</configuration>

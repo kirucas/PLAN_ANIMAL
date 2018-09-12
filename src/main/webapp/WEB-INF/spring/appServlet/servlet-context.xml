@@ -40,7 +40,6 @@
 		<beans:property name="viewClass" value="org.springframework.web.servlet.view.tiles3.TilesView" />
 	</beans:bean>
 	
-	<!-- 차후에 .properties 파일(resource파일)을 사용 할 경우 아래의 주석을 해제한 후 location을 설정하여 사용 -->
-	<!-- <context:property-placeholder location="classpath:"/> -->
+	<context:property-placeholder location="classpath:reservationResource/reservation.properties"/>
 	
 </beans:beans>

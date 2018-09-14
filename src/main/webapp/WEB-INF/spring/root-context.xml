@@ -4,5 +4,24 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 	
 	<!-- Root Context: defines shared resources visible to all other web components -->
+	<!-- JNDI Connection Pool 사용을 위한 등록 -->
+	<bean id="datasource" class="org.springframework.jndi.JndiObjectFactoryBean">
+		<property name="jndiName" value="jdbc/reserved" />
+		<property name="resourceRef">
+			<value>true</value>
+		</property>
+	</bean>
+	
+	<!-- myBatis 사용을 위한 bean 등록 -->
+	<!-- SqlSessionFactoryBean -->
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="datasource" />
+		<property name="configLocation" value="classpath:mybatis/configuration.xml" />
+	</bean>
+	
+	<!-- SqlSessionTemplate -->
+	<bean id="template" class="org.mybatis.spring.SqlSessionTemplate">
+		<constructor-arg ref="sqlSessionFactory" />
+	</bean>
 		
 </beans>

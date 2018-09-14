@@ -9,7 +9,7 @@ public class TemplateController {
 	@RequestMapping("/Reservation/template.rv")
 	public String execute() {
 		
-		return "template";
+		return "template.tiles";
 		
 	}
 	
